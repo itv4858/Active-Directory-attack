@@ -395,6 +395,8 @@ We will add users, file share, and sharing account
 # Step 9
 we will build out user machines
 
+- We will complete same steps as above, but this time with the windows 10 enterprise iso
+
 
 
 
