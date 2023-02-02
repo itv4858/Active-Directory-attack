@@ -396,6 +396,61 @@ We will add users, file share, and sharing account
 we will build out user machines
 
 - We will complete same steps as above, but this time with the windows 10 enterprise iso
+- I created 2 users for 2 machines
+
+
+- hit Domain Join Instead
+- We will enter the details of ther users we created in the server machine
+- then follow throw with the rest of the install
+
+![image](https://user-images.githubusercontent.com/38595857/216220486-104bd4f9-b5e3-4952-a37c-35e15ad630c2.png)
+
+
+
+- Next we donwload vmtools
+- then change the name on both pcs
+- anyi = user1
+- oaklandUni = user2
+
+
+
+
+- We will now join the domain server to both machines 
+- We go into the netowrk settings, and add the ip to the ipv4 dns 
+
+![image](https://user-images.githubusercontent.com/38595857/216222173-b777221e-f7f7-42e3-85af-58d88ece0cbf.png)
+
+
+- next we will add the domain
+
+![image](https://user-images.githubusercontent.com/38595857/216222395-4ae589f2-8433-42a9-8bab-5a484797111a.png)
+
+
+
+- We can now see both machines in active directory
+
+![image](https://user-images.githubusercontent.com/38595857/216223011-be780f4f-8e43-49de-868f-71c916d2baba.png)
+
+
+- we now are adding user under admin
+- 
+![image](https://user-images.githubusercontent.com/38595857/216223448-59f2c947-518e-4e63-b09f-0b885a934fe9.png)
+
+
+
+# Step 10
+
+Now lets perform a Kerberoasting attack
+
+
+- First, we need to make sure we have a user account on the windows server
+- go to cmd and type  " net user Username"
+- i already know we do, beacuse i added the user, but this is to confirm and output the basic info
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/216228590-a4b129d0-8402-4314-83f6-04342de16a14.png)
+
 
 
 
