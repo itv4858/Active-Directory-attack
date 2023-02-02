@@ -76,10 +76,14 @@ We will be adding both ISO files
 
  
  - Select next
+
+
  ![image](https://user-images.githubusercontent.com/38595857/216204258-0a272de3-56e5-44ea-a798-a383c838281e.png)
 
  
  - Leave as default disk space and press next
+
+
  ![image](https://user-images.githubusercontent.com/38595857/216204375-91f5ad1c-77fb-4ab0-9e2c-726018486046.png)
 
  
@@ -87,6 +91,7 @@ We will be adding both ISO files
  
  - MAKE SURE TO UNCHECK " POWER ON THIS VIRTUAL MACHONE AFTER CREATION
  - Press " Finish" after you're done
+
 
 ![image](https://user-images.githubusercontent.com/38595857/216204490-cb31695a-342c-4271-96cd-adda3bb1325c.png)
 
@@ -101,25 +106,83 @@ We need to fix a few settings for the server
 
 
 - Adjust memory to fit your ram size on your machine
+
+
 ![image](https://user-images.githubusercontent.com/38595857/216205164-060c41ba-4734-4ad5-918b-1b02f8bc6ed5.png)
 
 
  - Next, select the floppy disk and remove it
+
+
  ![image](https://user-images.githubusercontent.com/38595857/216205263-bc678a7f-739d-4ea5-8093-ffed197fa027.png)
 
 
 - Next, make sure the network adapter is set to NAT
 - Afterwards, press okay and power on the machine
 
+
 ![image](https://user-images.githubusercontent.com/38595857/216205387-0853e7dd-2409-46cc-9e82-a063dfe2edab.png)
 
 
 # Step 6
+We will finsih the setup for Windows Server 2019
 
+- Press next
+
+![image](https://user-images.githubusercontent.com/38595857/216205838-ec43ded9-8941-4ff7-b87d-195c99049476.png)
+
+
+-Press Install now
+
+![image](https://user-images.githubusercontent.com/38595857/216205885-02d1fca6-4c3d-4795-bffa-69ed7fbd4101.png)
+
+
+
+- Select the " Windows Server 2019 Standad Evaluation (Desktop Expierence)
+- Then next
+
+![image](https://user-images.githubusercontent.com/38595857/216206044-1a69a740-c16b-4970-b689-e1669a8d70ad.png)
+
+
+
+ - Press accept and select next
+
+
+![image](https://user-images.githubusercontent.com/38595857/216206190-d3dd0d00-4843-41f9-a889-5a3b4a808598.png)
+
+
+-Press " Custom windows install"
+
+
+![image](https://user-images.githubusercontent.com/38595857/216206292-ccddb9c9-3f3e-45f7-95ae-dafa0cc2b9ba.png)
 
 
  
- 
+ - Next, select "New"
+
+
+![image](https://user-images.githubusercontent.com/38595857/216206353-917c89f7-a222-4271-9752-d535f55bc0ff.png)
+
+
+- Next, select "Apply"
+
+
+![image](https://user-images.githubusercontent.com/38595857/216206421-4e3f64e8-9532-4934-a023-97682e2170f9.png)
+
+
+
+- Now press next, it will not install windows
+
+
+![image](https://user-images.githubusercontent.com/38595857/216206500-c4da746d-0124-401f-8d67-8cc40431d774.png)
+
+
+
+
+
+# Step 7
+
+
  
  
  
