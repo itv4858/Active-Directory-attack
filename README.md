@@ -183,6 +183,119 @@ We will finsih the setup for Windows Server 2019
 # Step 7
 
 
+ - Now enter any password, Keep in mind this is a pentest lab so either make it easy or difficult. 
+ - I entered "Password1"
+ - Press " finsih "
+
+
+![image](https://user-images.githubusercontent.com/38595857/216207556-50c1dc0f-5da8-42ef-8c9d-0f388c738a19.png)
+
+ 
+ 
+ - Search " pc name" and change it to whaterver you want
+
+![image](https://user-images.githubusercontent.com/38595857/216208257-71ac6c79-fe0e-4b42-b6d1-d885b9f0e355.png)
+
+
+- After you change it, press " restart now"
+
+ ![image](https://user-images.githubusercontent.com/38595857/216208338-7e18fb01-0a73-48be-968e-510ad8e51dc9.png)
+
+
+- It will now pop up the server dashboard
+- press "Manage" then " add roles and features" 
+
+ 
+ ![image](https://user-images.githubusercontent.com/38595857/216208864-6c04c3bb-6ba4-4a20-a74b-f725ee733d3b.png)
+
+ 
+ - Select Next until you get to server roles 
+ - once there, press " active directory domain services" 
+ - afterwards press next all the way then press install
+ 
+ ![image](https://user-images.githubusercontent.com/38595857/216209065-25d2faca-7c18-4bfc-a8af-d351b93ff793.png)
+
+ 
+ 
+ - Next hit the flag in th eupper left hand corner
+ - Then select promote this server to a domain controller
+
+
+ ![image](https://user-images.githubusercontent.com/38595857/216210223-bb6fd366-fb40-41da-9213-375a2744f2c1.png)
+
+
+- press "add a new forest"
+- Go ahead and give your domain a name
+
+
+![image](https://user-images.githubusercontent.com/38595857/216210399-3ab78fa4-6552-4397-b661-c3d61fb7e0ce.png)
+
+
+- Next give it a password
+- i entered " Password1"
+
+![image](https://user-images.githubusercontent.com/38595857/216210566-14cfdd38-238f-47ae-b882-9d9e3f3bf47b.png)
+
+
+- Now presss next until you get to the pre-req screen.
+- Press install and it will reboot aftwards
+
+
+![image](https://user-images.githubusercontent.com/38595857/216210783-90973e72-99e8-4de4-85d1-fc071b9350ae.png)
+
+
+
+- Now after you sign back in,
+- Click "manage" then " add roles and features
+
+![image](https://user-images.githubusercontent.com/38595857/216212148-a3d566f6-0869-420a-9335-4d7daa8650ba.png)
+
+
+
+- Now click next until you get to  " server roles"
+- Now click on " Active directory certificate services"
+
+
+![image](https://user-images.githubusercontent.com/38595857/216212342-16fe8d20-37d9-4e98-8ff6-10aecbba6aa5.png)
+
+
+- Now press next until final screen
+- Check the box " Restart the destination server automatically if required" 
+
+
+![image](https://user-images.githubusercontent.com/38595857/216212520-d40c783e-4a60-4df5-8061-e7ba1ee4804e.png)
+
+
+- Next hit the flag in th eupper left hand corner
+ - Then select " Configure active directory certificate services..."
+
+![image](https://user-images.githubusercontent.com/38595857/216212695-2a1bf848-d396-4463-8914-080753deb337.png)
+
+
+- Check off certification authority
+
+![image](https://user-images.githubusercontent.com/38595857/216212917-34dbe077-83a8-4226-9d21-522efbbd763c.png)
+
+
+- Finally, leave everything else as deafult and press next then configure
+
+![image](https://user-images.githubusercontent.com/38595857/216213105-01ead12e-6144-46bc-a9d2-f961bab5e26b.png)
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
  
