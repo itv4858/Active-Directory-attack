@@ -278,32 +278,129 @@ We will finsih the setup for Windows Server 2019
 
 
 - Finally, leave everything else as deafult and press next then configure
+- Press restart then log back in.
+
 
 ![image](https://user-images.githubusercontent.com/38595857/216213105-01ead12e-6144-46bc-a9d2-f961bab5e26b.png)
 
 
 
 
+# Step 8
+We will add users, file share, and sharing account
+
+
+- Press Tools, then active directory users and computers
+
+![image](https://user-images.githubusercontent.com/38595857/216213490-2c16fc58-c61d-472b-b497-d74a650a11a4.png)
+
+
+- We can see our computer and so much more
+
+![image](https://user-images.githubusercontent.com/38595857/216213608-9f2a7be1-5479-49f4-be7b-2dc1a9e214bf.png)
+
+
+
+- Right click on your directory -> then new -> then Organazational unit 
+
+
+![image](https://user-images.githubusercontent.com/38595857/216213785-21e82743-84a0-4a61-8ce4-15960310d3f9.png)
+
+
+- Create groups than press ok
+
+![image](https://user-images.githubusercontent.com/38595857/216213840-08da6484-89d6-4304-ad55-a0a00eeff738.png)
+
+
+- to clean up the "users" folder, we will move all other users excep admin and guest to the groups folder
+
+
+![image](https://user-images.githubusercontent.com/38595857/216213982-218d905f-5d13-4fe5-8681-87c96f0d3e4d.png)
+
+
+![image](https://user-images.githubusercontent.com/38595857/216214028-8ec896a4-0a04-49ec-aecc-a72489faefa1.png)
+
+
+
+- Now lets create users
+- You can creat as many as you want :)
+
+
+- I will create 3
+- Username = anyi Password = Password1
+- Username = oaklandUni Password = Iwillhackyou123
+- Username = Username Password = Password123
+
+ 
+ 
+ ![image](https://user-images.githubusercontent.com/38595857/216215105-1a192bb8-da70-49f9-bf80-6d5dd5aaab43.png)
+
+
+- Next copy the administrator 
+ - Username = SQLService Password = Password123#
+
+
+![image](https://user-images.githubusercontent.com/38595857/216215487-ab34d0ee-0cf2-44b3-855f-0311c7d74647.png)
+
+
+
+- Now we will creata a SPN (Serice principal Name) for the SQL service user
+ - Open Command prompt as an admin
+ - enter the commans
+    - setspn -a Messi/SQLService.SOCCER.local:60111 SOCCER\SQLService
+    - then type,  setspn -T SOCCER.local -Q */*      *this is to find it*
+
+
+![image](https://user-images.githubusercontent.com/38595857/216216194-8d6e2f75-7f71-464b-b350-a6d216d72dbd.png)
+
+ 
+ 
+ - for smb atacks we will open ports 149 & 445 open
+ 
+ 
+ 
+ - Next lets create a folder called "hackme" in the c drive, for the smb attacks
+
+
+ ![image](https://user-images.githubusercontent.com/38595857/216216574-bc47ab21-ffb4-40b1-91e9-777faa32285b.png)
+
+
+
+- Now go to File storage and servcices
+- then click on shares
+- then click on tasks
+- Then new share
+
+![image](https://user-images.githubusercontent.com/38595857/216216727-060d7436-8f53-4679-b8f3-9e81bb84e20e.png)
+
+
+
+- select a custom path and choose the folder you just created
+
+![image](https://user-images.githubusercontent.com/38595857/216216870-afbda3ab-ebed-4f4f-bb65-d78c426818ea.png)
+
+
+- we now have the port open for this attack
+
+![image](https://user-images.githubusercontent.com/38595857/216216988-aeb49b74-39c1-412d-b38e-74dbe98a1596.png)
+
+
+- next run a command prompt as an admin
+- enter ipconfig  *to grab the ip address of this server*
+- mine is 192.168.11.128
+![image](https://user-images.githubusercontent.com/38595857/216217075-7087dadd-52d6-4749-9e30-ea15e193a7cc.png)
+
+
+
+# Step 9
+we will build out user machines
 
 
 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+
+
  
  
  
