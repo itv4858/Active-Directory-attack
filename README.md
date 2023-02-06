@@ -495,4 +495,108 @@ Now lets perform a Kerberoasting attack
 - PASSWORD IS CRACKED
  
  
+ # Step 12
  
+ llmnr attack
+ 
+ 
+ 
+First we type
+- cd into responder directory
+- cd /usr/share/responder/
+
+
+![image](https://user-images.githubusercontent.com/38595857/217105330-1409f606-a609-473f-a50b-c727ecd2b407.png)
+
+
+- then go into root and run the command below
+ - python Responder.py -I eth0 -rdwv
+ - We run this becauser it allows us to do this attack by impacket. 
+
+
+![image](https://user-images.githubusercontent.com/38595857/217105751-e86efd06-5b28-4b0a-8f06-bd8abf22243e.png)
+
+
+- once into the windows server we apply the repsonders IP to connect inot the netowrk drive and from there we get the hash on our kali machine
+
+![image](https://user-images.githubusercontent.com/38595857/217106760-7029cb3b-1824-4e77-9205-4385cb9a8f58.png)
+
+
+![image](https://user-images.githubusercontent.com/38595857/217106804-ddbc078a-2b32-4729-bcf4-ca8b963080d7.png)
+
+
+- now lets crack the hash using hashcat 
+
+- hashcat -m 5600 -a 0 newhash.txt rockyou.txt
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/217107201-4d88d352-7d9f-4703-9622-e9a11cacdb1c.png)
+
+
+![image](https://user-images.githubusercontent.com/38595857/217107289-e0143d80-34fb-4701-9455-7760cf6ad3db.png)
+
+
+
+- passwrod is cracked
+
+# Step 13
+
+- smb relay attacks
+
+
+-go into root
+- go into repsinder directory
+- - modify .conf folder and turn off smb and http
+
+![image](https://user-images.githubusercontent.com/38595857/217108138-e05dfa86-c5c0-4ca6-ac89-ec646336c05d.png)
+
+
+![image](https://user-images.githubusercontent.com/38595857/217108207-ead4e397-ee16-43a6-bd0d-d8df5d4778b0.png)
+
+
+
+- then run the command below
+ - python Responder.py -I eth0 -rdwv
+ - We run this becauser it allows us to do this attack by impacket. 
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/217109244-1de77152-71d6-4e6b-8ad8-50c74e1b8ea5.png)
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/217109414-6c8722a2-8c2f-4bc0-93af-c072b03a226b.png)
+
+
+- next in the server we just try to connect to some fake foler
+
+![image](https://user-images.githubusercontent.com/38595857/217109553-faf581ca-c3f8-4a2a-96a9-6191828775ec.png)
+
+
+- the the attack hits and we get the hash
+
+![image](https://user-images.githubusercontent.com/38595857/217109574-72db7f5c-f368-4bce-825b-9e2916e87d4e.png)
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/217109609-5dd95f48-53e3-4a4c-8fe6-da2fcc3c2cc4.png)
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/217110948-c517fb87-743b-4fb2-bf63-1dcbdd67c6c3.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
