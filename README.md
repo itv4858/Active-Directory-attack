@@ -589,6 +589,54 @@ First we type
 
 
 
+# Step 13
+
+- Pass the Hash
+
+- we first ping the user machine to make sure the IP is alive and reachable
+
+
+![image](https://user-images.githubusercontent.com/38595857/223762153-76145c5b-f087-44fe-a3a3-35b356a48d93.png)
+
+
+- the we run an nmap scan
+- nmap -sV -sC  192.168.80.129
+
+
+![image](https://user-images.githubusercontent.com/38595857/223762763-7b067d6a-4685-485f-b3e1-6c7e3bf79103.png)
+
+
+- Now start up Msfconsole to run metasploit
+- we search for the ms08-067 explopit
+
+![image](https://user-images.githubusercontent.com/38595857/223763419-1406b944-90b0-4404-b4ae-002cdf235c1a.png)
+
+
+- run this copmmand " use exploit/windows/smb/ms08_067_netapi"
+and set the payload
+
+
+
+![image](https://user-images.githubusercontent.com/38595857/223763851-09a60cad-2afe-4d43-954e-feadc2fd72dd.png)
+
+
+- nexts et the hosts to run exploit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
