@@ -353,7 +353,8 @@ We will add users, file share, and sharing account
 
 ![image](https://user-images.githubusercontent.com/38595857/216216194-8d6e2f75-7f71-464b-b350-a6d216d72dbd.png)
 
- 
+ ![image](https://user-images.githubusercontent.com/38595857/223738892-ac450cdb-4184-49f6-8229-06ad5f9f3e82.png)
+
  
  - for smb atacks we will open ports 149 & 445 open
  
